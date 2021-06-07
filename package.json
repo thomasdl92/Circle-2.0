@@ -1,0 +1,22 @@
+{
+  "name": "circles",
+  "version": "1.0.0",
+  "description": "> Rebuilding the assignment to test and discover.",
+  "scripts": {
+    "start": "parcel serve ./src/index.html --open",
+    "clean": "rm -rf ./dist ./.parcel-cache ./out",
+    "build": "npm run clean && parcel build ./src/index.html --dist-dir ./out --no-source-maps",
+    "serve": "live-server ./out",
+    "deploy": "surge ./out --domain https://thomasdelaetcirclesparty.surge.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.3.1"
+  },
+  "dependencies": {
+    "randomcolor": "^0.6.2",
+    "surge": "^0.23.0"
+  }
+}

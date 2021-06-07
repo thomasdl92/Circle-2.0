@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: orange;
+}
+
+.circle {
+  border-radius: 50%;
+  border: 3px solid;
+  position: absolute;
+}
